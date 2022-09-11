@@ -9,8 +9,9 @@
 .btn-laranja {
   background: orange;
 }
-.btn-laranja.btn-laranja:hover {
-  background: orangered;
+
+p {
+  color: orange;
 }
 
 /*# sourceMappingURL=style.css.map */
