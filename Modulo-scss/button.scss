@@ -1,4 +1,4 @@
-.btn {
+@mixin btn {
     width: 200px;
     padding: 10px 0;
     background: none;
@@ -14,16 +14,16 @@
 }
 
 .btn-laranja {
-    @extend .btn;
+    @include btn;
     @include button-style($color-orange, $color-text )
 }
 
 .btn-roxo {
-    @extend .btn;
+    @include btn;
     @include button-style($color-roxo, $color-text)
 }
 
 .btn-amarelo {
-    @extend .btn;
+    @include btn;
     @include button-style($color-amarelo, #000)
 }
