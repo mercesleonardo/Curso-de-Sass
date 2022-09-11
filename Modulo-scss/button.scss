@@ -14,6 +14,7 @@
     border-radius: 10px;
     display: block;
     margin-bottom: 10px;
+    
 
     &.btn-laranja {
         @include button-style($color-orange, $color-text )
