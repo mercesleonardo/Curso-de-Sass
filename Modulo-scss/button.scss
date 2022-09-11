@@ -1,29 +1,27 @@
-@mixin btn {
-    width: 200px;
-    padding: 10px 0;
-    background: none;
-    border: 0;
-    border-radius: 10px;  
-    display: block;
-    margin-bottom: 10px;
-}
-
 @mixin button-style($background, $color) {
     background: $background;
     color: $color;
 }
 
-.btn-laranja {
-    @include btn;
-    @include button-style($color-orange, $color-text )
+.btn {
+    width: 200px;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+
+    &.btn-laranja {
+        @include button-style($color-orange, $color-text )
+    }
+
+    &.btn-roxo {
+        @include button-style($color-roxo, $color-text)
+    }
+
+    &.btn-amarelo {
+        @include button-style($color-amarelo, #000)
+    }
 }
 
-.btn-roxo {
-    @include btn;
-    @include button-style($color-roxo, $color-text)
-}
-
-.btn-amarelo {
-    @include btn;
-    @include button-style($color-amarelo, #000)
-}
