@@ -1,17 +1,16 @@
-p {
-    span {
-        background: red;
-    }
-
-    b {
-        background: blueviolet;
-    }
-
-    &:hover {
-        color: #FFF;
-    }
+.btn {
+    width: 200px;
+    padding: 10px 0;
+    background: none;
+    border: 0;
+    border-radius: 10px;  
 }
 
-body {
-    color: darkcyan;
+.btn-laranja {
+    @extend .btn;
+    background: orange;
+
+    &.btn-laranja:hover {
+        background: orangered;
+    }
 }
